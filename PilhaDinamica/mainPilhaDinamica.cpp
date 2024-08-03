@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+void menuPrincipal();
+
 void mainPilhaDinamica(){
     pilhaDinamica pilhadinamicaa1;
     tipoValor valor;
@@ -22,7 +24,7 @@ void mainPilhaDinamica(){
         cout<<"Digite 1 para inserir um elemento!\n";
         cout<<"Digite 2 para remover um elemento!\n";
         cout<<"Digite 3 para imprimir a pilha!\n";
-        cout<<"Digite 4 para ver o tamanho da pilha!\n";
+        cout<<"Digite 4 para voltar para o menu do sistema!\n";
         
         cin>>opcao;
               
@@ -46,11 +48,11 @@ void mainPilhaDinamica(){
             system("cls");
             pilhadinamicaa1.imprimir();
             break;
-        // case 4:
-        //     cout << "Voltando ao menu principal...\n";
-        //     // system("cls");
-        //     menuPrincipal();
-        //     break;
+        case 4:
+            cout << "Voltando ao menu principal...\n";
+            system("cls");
+            menuPrincipal();
+            break;
         default:
             system("cls");
             cout<<"inseriu um valor inapropriado!\n";

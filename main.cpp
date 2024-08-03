@@ -9,7 +9,7 @@ void mainPilhaDinamica();
 void menuPrincipal(){
     int op;
 
-    cout<<"-------------------------Bem-vindo ao gerador de pilha-----------------------------\n";
+    cout<<"----------------------Bem-vindo ao menu do sistema gerador de estruturas----------------------\n";
 
     do
     {
